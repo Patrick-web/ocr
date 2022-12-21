@@ -7,7 +7,7 @@ RUN apt update \
   ca-certificates \
   libtesseract-dev=4.1.1-2.1 \
   tesseract-ocr=4.1.1-2.1 \
-  golang=2:1.17~1
+  golang
 
 ENV GO111MODULE=on
 ENV GOPATH=${HOME}/go
