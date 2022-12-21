@@ -6,7 +6,8 @@ RUN apt update \
   && apt install -y \
   ca-certificates \
   libtesseract-dev=4.1.1-2.1 \
-  tesseract-ocr=4.1.1-2.1
+  tesseract-ocr=4.1.1-2.1 \
+  wget
 
 RUN wget https://go.dev/dl/go1.17.linux-amd64.tar.gz
 RUN tar -xzf go1.17.linux-amd64.tar.gz
