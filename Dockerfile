@@ -3,11 +3,11 @@ FROM debian:bullseye-slim
 LABEL maintainer="jp <pntxall100@gmail.com@gmail.com>"
 
 RUN apt update \
-    && apt install -y \
-    ca-certificates \
-    libtesseract-dev=4.1.1-2.1 \
-    tesseract-ocr=4.1.1-2.1 \
-    golang=2:1.15~1
+  && apt install -y \
+  ca-certificates \
+  libtesseract-dev=4.1.1-2.1 \
+  tesseract-ocr=4.1.1-2.1 \
+  golang=2:1.17~1
 
 ENV GO111MODULE=on
 ENV GOPATH=${HOME}/go
