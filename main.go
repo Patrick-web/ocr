@@ -44,7 +44,7 @@ func main() {
 		return c.JSON(preview)
 	})
 	println("Running")
-	app.Listen(":3000")
+	app.Listen(":5000")
 }
 
 // downloading image from url and saving it to the path as a jpg
