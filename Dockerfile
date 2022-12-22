@@ -2,6 +2,8 @@ FROM debian:bullseye-slim
 
 LABEL maintainer="jp <pntxall100@gmail.com@gmail.com>"
 
+WORKDIR /app
+
 RUN apt update \
   && apt install -y \
   ca-certificates \
@@ -17,7 +19,6 @@ ENV GO111MODULE=on
 ENV GOPATH=${HOME}/go
 ENV PATH=${PATH}:${GOROOT}/bin:${GOPATH}/bin
 
-WORKDIR /app
 
 COPY go.mod ./
 COPY go.sum ./
