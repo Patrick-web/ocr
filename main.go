@@ -44,7 +44,7 @@ func main() {
 		return c.JSON(preview)
 	})
 	println("Running")
-	app.Listen(":5000")
+	app.Listen(":8080")
 }
 
 // downloading image from url and saving it to the path as a jpg
@@ -67,7 +67,7 @@ func downloadImage(url string, path string) {
 	}
 }
 
-//Extracting text from image using tesseract
+// Extracting text from image using tesseract
 func extractTextFromImage(path string) string {
 	fmt.Println("Extracting text from image")
 	client := gosseract.NewClient()
